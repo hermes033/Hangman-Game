@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet&family=Tektur&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Handjet', cursive;
+    font-family: 'Tektur', cursive;
+    font-size: 1.5rem;
+}
+
+body {
+    background: linear-gradient(rgb(400, 122, 123), rgb(123, 42, 152));
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.game {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+h1 {
+    border: 0.5px solid wheat;
+    font-family: 'Handjet', cursive;
+    letter-spacing: 0.2em;
+    font-size: 85px;
+    border-radius: 45px;
+    width: 50%;
+    text-align: center;
+    box-shadow: 1px 1px 20px wheat;
+}
+
+.text,
+.figure,
+.keyboard {
+    border: 0.5px solid wheat;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 1px 1px 20px wheat;
+}
+
+.text {
+    height: 300px;
+    width: 650px;
+}
+
+.figure {
+    position: relative;
+    height: 300px;
+    width: 450px;
+    margin-left: 5vh;
+}
+
+.restartGame {
+    position: relative;
+    width: 25vh;
+    font-size: x-large;
+    height: 7vh;
+}
+
+.keyboard {
+    margin: 0 auto;
+    padding: 0.5rem;
+    width: 610px;
+    height: 190px;
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+    gap: 10px;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    width: 50px;
+    height: 50px;
+    color: black;
+    border-radius: 5px;
+}
+
+.lettersquare {
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s ease;
+    pointer-events: all;
+}
+
+.lettersquare:hover {
+    background: black;
+    color: wheat;
+}
+
+.wrong {
+    background: red;
+    pointer-events: none;
+}
+
+.correct {
+    background: green;
+    pointer-events: none;
+}
+
+.close {
+    pointer-events: none;
+}
+
+.show {
+    color: white;
+}
+
+.ayaq {
+    position: absolute;
+    left: 70px;
+    height: 297px;
+    width: 20px;
+    background: brown;
+}
+
+.qollar {
+    position: absolute;
+    top: 0px;
+    left: 70px;
+    height: 20px;
+    width: 170px;
+    background: brown;
+}
+
+.destek {
+    position: absolute;
+    top: 35px;
+    left: 65px;
+    height: 20px;
+    width: 100px;
+    transform: rotate(-45deg);
+    background: brown;
+}
+
+.ip {
+    position: absolute;
+    top: 0px;
+    right: 4em;
+    width: 10px;
+    height: 50px;
+    background-color: gray;
+}
+
+.head {
+    position: absolute;
+    top: 50px;
+    left: 57.4%;
+    transform: translateX(-50%);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid white;
+    z-index: 1;
+}
+
+.body {
+    position: absolute;
+    top: 100px;
+    left: 57.4%;
+    transform: translateX(-50%);
+    height: 100px;
+    width: 2.5px;
+    border: 2px solid white;
+    background: white;
+}
+
+.leftarm {
+    position: absolute;
+    top: 108px;
+    left: 64%;
+    transform: translateX(-50%);
+    transform: rotate(120deg);
+    height: 60px;
+    width: 2.5px;
+    border: 2px solid white;
+    background: white;
+}
+
+.rightarm {
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    transform: rotate(55deg);
+    height: 60px;
+    width: 2.5px;
+    border: 2px solid white;
+    background: white;
+}
+
+.leftleg {
+    position: absolute;
+    top: 185px;
+    left: 64%;
+    transform: translateX(-50%);
+    transform: rotate(120deg);
+    height: 60px;
+    width: 2.5px;
+    border: 2px solid white;
+    background: white;
+}
+
+.rightleg {
+    position: absolute;
+    top: 187px;
+    left: 50%;
+    transform: translateX(-50%);
+    transform: rotate(55deg);
+    height: 60px;
+    width: 2.5px;
+    border: 2px solid white;
+    background: white;
+}
